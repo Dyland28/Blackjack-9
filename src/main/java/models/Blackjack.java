@@ -113,7 +113,7 @@ public class Blackjack {
     }
     */
 
-    public void uHit(){
+    public void playerHit(){
         user.userHit(deck, cols.get(1));
         userTotal = user.stay();
         if(userTotal > 21){
@@ -121,7 +121,7 @@ public class Blackjack {
         }
     }
 
-    public int dPlay() {
+    public int dealerHit() {
         dealerTotal = dealer.dealerPlay(cols.get(0), deck);
         return dealerTotal;
     }

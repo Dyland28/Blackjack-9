@@ -71,14 +71,14 @@ public class ApplicationController {
         return Results.json().render(g);
     }
 
-    public Result userHit(Context context, Blackjack g){
-        g.uHit();
+    public Result playerHit(Context context, Blackjack g){
+        g.playerHit();
         return Results.json().render(g);
     }
 
 
     public Result dealerHit(Context context, Blackjack g){
-        g.dPlay();
+        g.dealerHit();
         return Results.json().render(g);
     }
 
